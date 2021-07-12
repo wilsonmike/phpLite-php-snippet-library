@@ -17,11 +17,16 @@
     </header>
     <!-- start of your main div -->
     <div class="main">
+        <div class="post-container">
         <?php if(have_posts()) : ?>
-            post found
+            <?php while(have_posts()): the_post(); ?>
+                <h3 class="post-title"><?php the_title(); ?></h3>
+                <?php the_content(); ?>
+            <?php endwhile; ?>
         <?php else : ?>
             <?php echo wpautop('Sorry, no posts were found'); ?>
         <?php endif; ?>
+        </div>
     </div>
   </body>
 </html>

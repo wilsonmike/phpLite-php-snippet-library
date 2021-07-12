@@ -14,3 +14,15 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.post-title {
+  font-size: 30px;
+}
+
+.post-container {
+  background-color: #2a2e35;
+  padding: 5%;
+  width: 50%;
+  margin: 5% auto;
+  border-radius: 20px;
+}
