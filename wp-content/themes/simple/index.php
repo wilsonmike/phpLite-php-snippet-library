@@ -13,8 +13,15 @@
   <body>
     <header>
       <h1><?php bloginfo('name'); ?></h1>
-      <!-- <hr /> -->
       <span><?php bloginfo('description'); ?></span>
     </header>
+    <!-- start of your main div -->
+    <div class="main">
+        <?php if(have_posts()) : ?>
+            post found
+        <?php else : ?>
+            <?php echo wpautop('Sorry, no posts were found'); ?>
+        <?php endif; ?>
+    </div>
   </body>
 </html>
