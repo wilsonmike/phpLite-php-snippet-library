@@ -20,7 +20,7 @@ body {
 }
 
 .post-container {
-  background-color: #2a2e35;
+  /* background-color: #21252b; */
   padding: 5%;
   width: 50%;
   margin: 5% auto;
@@ -34,5 +34,7 @@ body {
   .post-container {
     width: 70%;
     padding: 3%;
+    background-color: #c7edfa;
+    color: black;
   }
 }
