@@ -23,8 +23,24 @@ body {
   /* background-color: #21252b; */
   padding: 5%;
   width: 50%;
-  margin: 5% auto;
+  margin: 0 auto;
   border-radius: 20px;
+}
+.post {
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+a {
+  color: #333;
 }
 
 @media only screen and (max-width: 600px) {

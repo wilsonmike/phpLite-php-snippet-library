@@ -20,14 +20,22 @@
         <div class="post-container">
         <?php if(have_posts()) : ?>
             <?php while(have_posts()): the_post(); ?>
-                <h3 class="post-title"><?php the_title(); ?></h3>
+            <article class="post">
+            <h3 class="post-title">
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?>
+                </a>
+                </h3>
                 <?php the_content(); ?>
+            </article>
+            <br>
+            <a href="<?php the_permalink(); ?>" class="button">Read More</a>
             <?php endwhile; ?>
         <?php else : ?>
             <?php echo wpautop('Sorry, no posts were found'); ?>
         <?php endif; ?>
         </div>
     </div>
-    <?php include ("footer.php"); ?>
+    <?php get_footer(); ?>
   </body>
 </html>
