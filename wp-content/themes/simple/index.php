@@ -12,9 +12,12 @@
   </head>
   <body>
     <header>
+    <img class="logo" src="<?php echo get_bloginfo('template_url') ?>/assets/images/elephant.svg"/>
       <h1><?php bloginfo('name'); ?></h1>
-      <span><?php bloginfo('description'); ?></span>
     </header>
+    <div>
+        <span class="maininfo"><?php bloginfo('description'); ?></span>
+    </div>
     <!-- start of your main div -->
     <div class="main">
         <div class="post-container">

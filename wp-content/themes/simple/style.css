@@ -19,6 +19,23 @@ body {
   font-size: 2em;
 }
 
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  /* justify-content: center; */
+}
+
+.maininfo {
+  justify-content: center;
+  width: 100%;
+}
+
 .post-container {
   /* background-color: #21252b; */
   padding: 5%;
